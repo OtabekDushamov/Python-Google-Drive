@@ -17,6 +17,7 @@ def create_and_upload_file(file_name='test.txt', file_content='Hey Dude!'):
         
         return f'File {file_name} was uploaded!Have a good day!'
     except Exception as _ex:
+        print(_ex)
         return 'Got some trouble, check your code please!'
     
     
@@ -39,8 +40,8 @@ def upload_dir(dir_path=''):
     
     
 def main():
-    # print(create_and_upload_file(file_name='hello.txt', file_content='Hello Friend'))
-    print(upload_dir(dir_path='path_to_dir'))
+    print(create_and_upload_file(file_name='hello.txt', file_content='Hello Friend'))
+    # print(upload_dir(dir_path='path_to_dir'))
     
     
 if __name__ =='__main__':
